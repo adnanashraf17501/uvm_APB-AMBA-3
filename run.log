@@ -1,0 +1,253 @@
+# vsim top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 11:44:09 on Jun 10,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.testbench_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.apb_intf(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+add wave -position insertpoint sim:/top/a_intf/*
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO testbench.sv(40) @ 0: reporter [Top] _______________Top_________________
+# UVM_INFO apb_test.sv(9) @ 0: uvm_test_top [TEST] TEST
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO apb_env.sv(11) @ 0: uvm_test_top.h_env [ENVIRONMENT] ENVIRONMENT
+# UVM_INFO apb_sequence.sv(6) @ 0: reporter@@sequence1 [SEQUENCE] _______________SEQUENCE_________________
+# UVM_INFO apb_agent.sv(15) @ 0: uvm_test_top.h_env.h_magent [M_AGENT] M_AGENT
+# UVM_INFO apb_agent.sv(45) @ 0: uvm_test_top.h_env.h_s_agent [S_AGENT] S_AGENT
+# UVM_INFO apb_scoreboard.sv(13) @ 0: uvm_test_top.h_env.h_sb [scoreboard] _______________scoreboard_________________
+# UVM_INFO apb_sequencer.sv(5) @ 0: uvm_test_top.h_env.h_magent.h_sequencer [SEQUENCER] _______________SEQUENCER_________________
+# UVM_INFO apb_monitor.sv(14) @ 0: uvm_test_top.h_env.h_magent.h_imonitor [I_MONITOR] I_MONITOR
+# UVM_INFO apb_transaction.sv(27) @ 0: reporter@@seq_item [SEQ_ITEM] _______________SEQ_ITEM_________________
+# UVM_INFO apb_monitor.sv(55) @ 0: uvm_test_top.h_env.h_s_agent.h_omonitor [O_MONITOR] O_MONITOR
+# UVM_INFO apb_transaction.sv(27) @ 0: reporter@@seq_item [SEQ_ITEM] _______________SEQ_ITEM_________________
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               test                    -     @471 
+#   h_env                    environment             -     @478 
+#     h_magent               m_agent                 -     @489 
+#       a_port               uvm_analysis_port       -     @649 
+#       h_drv                m_driver                -     @619 
+#         rsp_port           uvm_analysis_port       -     @634 
+#         seq_item_port      uvm_seq_item_pull_port  -     @626 
+#       h_imonitor           imonitor                -     @642 
+#         m_port             uvm_analysis_port       -     @661 
+#       h_sequencer          m_sequencer             -     @510 
+#         rsp_export         uvm_analysis_export     -     @517 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @611 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     h_s_agent              s_agent                 -     @496 
+#       h_omonitor           omonitor                -     @674 
+#         s_o_port           uvm_analysis_port       -     @693 
+#       s_port               uvm_analysis_port       -     @681 
+#     h_sb                   scoreboard              -     @503 
+#       sb_imp               uvm_analysis_imp        -     @701 
+#       sb_omp               uvm_analysis_imp_omon   -     @709 
+# --------------------------------------------------------------
+# 
+# UVM_INFO apb_transaction.sv(27) @ 0: reporter@@seq_item [SEQ_ITEM] _______________SEQ_ITEM_________________
+# UVM_INFO apb_sequence.sv(14) @ 15: reporter@@sequence1 [SEQUENCE] _______________ENTERED_IN_TO_START_ITEM_________________
+# UVM_INFO apb_sequence.sv(18) @ 15: reporter@@sequence1 [SEQUENCE] ______________WAITING_FOR_FINISH_ITEM_________________
+# UVM_INFO apb_driver.sv(28) @ 15: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ENTERED_IN_TO_GET_NEXT_ITEM_________________
+# UVM_INFO apb_driver.sv(43) @ 55: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________WAITING_FOR_ITEM_DONE_________________
+# UVM_INFO apb_driver.sv(46) @ 55: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ITEM_DONE_________________
+# UVM_INFO apb_monitor.sv(36) @ 55: uvm_test_top.h_env.h_magent.h_imonitor [I_MONITOR] IMON_________PADDR=10,PWDATA=20,time=55
+# UVM_INFO apb_scoreboard.sv(23) @ 55: uvm_test_top.h_env.h_sb [SCOREBOARD] imon_____________________addr=10,data= 20
+# UVM_INFO apb_scoreboard.sv(26) @ 55: uvm_test_top.h_env.h_sb [scoreboard] _________ARRAY OF imon___________imon_array='{10:20 }
+# UVM_INFO apb_sequence.sv(21) @ 55: reporter@@sequence1 [SEQUENCE] _______________FINISH_ITEM_________________
+# UVM_INFO apb_driver.sv(28) @ 55: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ENTERED_IN_TO_GET_NEXT_ITEM_________________
+# UVM_INFO apb_driver.sv(43) @ 95: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________WAITING_FOR_ITEM_DONE_________________
+# UVM_INFO apb_driver.sv(46) @ 95: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ITEM_DONE_________________
+# UVM_INFO apb_monitor.sv(36) @ 95: uvm_test_top.h_env.h_magent.h_imonitor [I_MONITOR] IMON_________PADDR=20,PWDATA=90,time=95
+# UVM_INFO apb_scoreboard.sv(23) @ 95: uvm_test_top.h_env.h_sb [SCOREBOARD] imon_____________________addr=20,data= 90
+# UVM_INFO apb_scoreboard.sv(26) @ 95: uvm_test_top.h_env.h_sb [scoreboard] _________ARRAY OF imon___________imon_array='{10:20, 20:90 }
+# UVM_INFO apb_driver.sv(28) @ 95: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ENTERED_IN_TO_GET_NEXT_ITEM_________________
+# UVM_INFO apb_driver.sv(43) @ 135: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________WAITING_FOR_ITEM_DONE_________________
+# UVM_INFO apb_driver.sv(46) @ 135: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ITEM_DONE_________________
+# UVM_INFO apb_monitor.sv(36) @ 135: uvm_test_top.h_env.h_magent.h_imonitor [I_MONITOR] IMON_________PADDR=30,PWDATA=90,time=135
+# UVM_INFO apb_scoreboard.sv(23) @ 135: uvm_test_top.h_env.h_sb [SCOREBOARD] imon_____________________addr=30,data= 90
+# UVM_INFO apb_scoreboard.sv(26) @ 135: uvm_test_top.h_env.h_sb [scoreboard] _________ARRAY OF imon___________imon_array='{10:20, 20:90, 30:90 }
+# UVM_INFO apb_driver.sv(28) @ 135: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ENTERED_IN_TO_GET_NEXT_ITEM_________________
+# UVM_INFO apb_driver.sv(43) @ 175: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________WAITING_FOR_ITEM_DONE_________________
+# UVM_INFO apb_driver.sv(46) @ 175: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ITEM_DONE_________________
+# UVM_INFO apb_monitor.sv(36) @ 175: uvm_test_top.h_env.h_magent.h_imonitor [I_MONITOR] IMON_________PADDR=40,PWDATA=10,time=175
+# UVM_INFO apb_scoreboard.sv(23) @ 175: uvm_test_top.h_env.h_sb [SCOREBOARD] imon_____________________addr=40,data= 10
+# UVM_INFO apb_scoreboard.sv(26) @ 175: uvm_test_top.h_env.h_sb [scoreboard] _________ARRAY OF imon___________imon_array='{10:20, 20:90, 30:90, 40:10 }
+# UVM_INFO apb_driver.sv(28) @ 175: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ENTERED_IN_TO_GET_NEXT_ITEM_________________
+# UVM_INFO apb_driver.sv(43) @ 215: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________WAITING_FOR_ITEM_DONE_________________
+# UVM_INFO apb_driver.sv(46) @ 215: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ITEM_DONE_________________
+# UVM_INFO apb_monitor.sv(75) @ 215: uvm_test_top.h_env.h_s_agent.h_omonitor [O_MONITOR] OMON_____________________PADDR=10,PRDATA=20,time=215
+# UVM_INFO apb_scoreboard.sv(30) @ 215: uvm_test_top.h_env.h_sb [SCOREBOARD]  omon________________________addr=10,data=20
+# UVM_INFO apb_scoreboard.sv(33) @ 215: uvm_test_top.h_env.h_sb [scoreboard] _________ARRAY OF omon___________omon_array='{10:20 }
+# UVM_INFO apb_driver.sv(28) @ 215: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ENTERED_IN_TO_GET_NEXT_ITEM_________________
+# UVM_INFO apb_driver.sv(43) @ 255: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________WAITING_FOR_ITEM_DONE_________________
+# UVM_INFO apb_driver.sv(46) @ 255: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ITEM_DONE_________________
+# UVM_INFO apb_monitor.sv(75) @ 255: uvm_test_top.h_env.h_s_agent.h_omonitor [O_MONITOR] OMON_____________________PADDR=20,PRDATA=90,time=255
+# UVM_INFO apb_scoreboard.sv(30) @ 255: uvm_test_top.h_env.h_sb [SCOREBOARD]  omon________________________addr=20,data=90
+# UVM_INFO apb_scoreboard.sv(33) @ 255: uvm_test_top.h_env.h_sb [scoreboard] _________ARRAY OF omon___________omon_array='{10:20, 20:90 }
+# UVM_INFO apb_driver.sv(28) @ 255: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ENTERED_IN_TO_GET_NEXT_ITEM_________________
+# UVM_INFO apb_driver.sv(43) @ 295: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________WAITING_FOR_ITEM_DONE_________________
+# UVM_INFO apb_driver.sv(46) @ 295: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ITEM_DONE_________________
+# UVM_INFO apb_monitor.sv(75) @ 295: uvm_test_top.h_env.h_s_agent.h_omonitor [O_MONITOR] OMON_____________________PADDR=30,PRDATA=90,time=295
+# UVM_INFO apb_scoreboard.sv(30) @ 295: uvm_test_top.h_env.h_sb [SCOREBOARD]  omon________________________addr=30,data=90
+# UVM_INFO apb_scoreboard.sv(33) @ 295: uvm_test_top.h_env.h_sb [scoreboard] _________ARRAY OF omon___________omon_array='{10:20, 20:90, 30:90 }
+# UVM_INFO apb_driver.sv(28) @ 295: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ENTERED_IN_TO_GET_NEXT_ITEM_________________
+# UVM_INFO apb_driver.sv(43) @ 335: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________WAITING_FOR_ITEM_DONE_________________
+# UVM_INFO apb_driver.sv(46) @ 335: uvm_test_top.h_env.h_magent.h_drv [DRIVER] _______________ITEM_DONE_________________
+# UVM_INFO apb_monitor.sv(75) @ 335: uvm_test_top.h_env.h_s_agent.h_omonitor [O_MONITOR] OMON_____________________PADDR=40,PRDATA=10,time=335
+# UVM_INFO apb_scoreboard.sv(30) @ 335: uvm_test_top.h_env.h_sb [SCOREBOARD]  omon________________________addr=40,data=10
+# UVM_INFO apb_scoreboard.sv(33) @ 335: uvm_test_top.h_env.h_sb [scoreboard] _________ARRAY OF omon___________omon_array='{10:20, 20:90, 30:90, 40:10 }
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 735: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO apb_scoreboard.sv(42) @ 735: uvm_test_top.h_env.h_sb [SCOREBOARD*******PASS*******] imon_array=20,omon_array=20
+# UVM_INFO apb_scoreboard.sv(42) @ 735: uvm_test_top.h_env.h_sb [SCOREBOARD*******PASS*******] imon_array=90,omon_array=90
+# UVM_INFO apb_scoreboard.sv(42) @ 735: uvm_test_top.h_env.h_sb [SCOREBOARD*******PASS*******] imon_array=90,omon_array=90
+# UVM_INFO apb_scoreboard.sv(42) @ 735: uvm_test_top.h_env.h_sb [SCOREBOARD*******PASS*******] imon_array=10,omon_array=10
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   73
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRIVER]    24
+# [ENVIRONMENT]     1
+# [I_MONITOR]     5
+# [M_AGENT]     1
+# [O_MONITOR]     5
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD]     8
+# [SCOREBOARD*******PASS*******]     4
+# [SEQUENCE]     4
+# [SEQUENCER]     1
+# [SEQ_ITEM]     3
+# [S_AGENT]     1
+# [TEST]     1
+# [TEST_DONE]     1
+# [Top]     1
+# [UVMTOP]     1
+# [scoreboard]     9
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 735 ns  Iteration: 54  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+coverage report -html -htmldir covhtmlreport -assert -directive -cvg -code bcefst -pa -threshL 50 -threshH 90
+# Report created in covhtmlreport/index.html
+coverage report -file report.txt -byfile -assert -directive -cvg -codeAll
+coverage report -file report.txt -append -byfile -assert -directive -cvg -codeAll
+add wave sim:/top/a_intf/*
+# Causality operation skipped due to absence of debug database file
+quit -sim 
+# End time: 12:50:17 on Jun 10,2021, Elapsed time: 1:06:08
+# Errors: 0, Warnings: 1
+vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/cov.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 12:51:04 on Jun 10,2021
+# vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/cov.sv 
+# ** Error: (vlog-13069) C:/Users/dell/Desktop/eda/cov.sv(1): near "uvm_subscriber": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/dell/Desktop/eda/cov.sv(1): Error in class extension specification.
+# End time: 12:51:04 on Jun 10,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/cov.sv 
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 12:53:12 on Jun 10,2021
+# vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/cov.sv 
+# ** Error: (vlog-13069) C:/Users/dell/Desktop/eda/cov.sv(1): near "uvm_sequence": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/dell/Desktop/eda/cov.sv(1): Error in class extension specification.
+# End time: 12:53:13 on Jun 10,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# C:/questasim64_10.7c/win64/vlog failed.
+vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/cov.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 12:53:57 on Jun 10,2021
+# vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/cov.sv 
+# ** Error: (vlog-13069) C:/Users/dell/Desktop/eda/cov.sv(1): near "uvm_sequence_item": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/dell/Desktop/eda/cov.sv(1): Error in class extension specification.
+# End time: 12:53:58 on Jun 10,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+cd C:/Users/dell/Desktop/eda
+vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/COV.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 13:37:53 on Jun 10,2021
+# vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/COV.sv 
+# ** Error: C:/Users/dell/Desktop/eda/COV.sv(1): (vlog-2730) Undefined variable: 'apb_seq_item'.
+# ** Error: (vlog-13069) C:/Users/dell/Desktop/eda/COV.sv(1): near "uvm_subscriber": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/dell/Desktop/eda/COV.sv(1): Error in class extension specification.
+# End time: 13:37:54 on Jun 10,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/COV.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 13:37:55 on Jun 10,2021
+# vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/COV.sv 
+# ** Error: C:/Users/dell/Desktop/eda/COV.sv(1): (vlog-2730) Undefined variable: 'apb_seq_item'.
+# ** Error: (vlog-13069) C:/Users/dell/Desktop/eda/COV.sv(1): near "uvm_subscriber": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/dell/Desktop/eda/COV.sv(1): Error in class extension specification.
+# End time: 13:37:55 on Jun 10,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+cd C:/Users/dell/Desktop/eda
+vlog testbench.sv +incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 13:43:10 on Jun 10,2021
+# vlog -reportprogress 300 testbench.sv "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
+# ** Error: ** while parsing file included at testbench.sv(6)
+# ** at COV.sv(1): (vlog-2730) Undefined variable: 'apb_seq_item'.
+# End time: 13:43:15 on Jun 10,2021, Elapsed time: 0:00:05
+# Errors: 1, Warnings: 0
+# C:/questasim64_10.7c/win64/vlog failed.
+vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/testbench.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 13:46:26 on Jun 10,2021
+# vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/testbench.sv 
+# ** Error: C:/Users/dell/Desktop/eda/testbench.sv(2): Cannot open `include file "C:/questasim64_10.7c/ovm-2.1.2/../verilog_src/ovm-2.1.2/src/uvm_macros.svh".
+# ** Error: ** while parsing file included at C:/Users/dell/Desktop/eda/testbench.sv(6)
+# ** at COV.sv(1): (vlog-2730) Undefined variable: 'apb_seq_item'.
+# ** Error: ** while parsing file included at C:/Users/dell/Desktop/eda/testbench.sv(6)
+# ** at COV.sv(2): (vlog-2163) Macro `uvm_component_utils is undefined.
+# ** Error: (vlog-13069) ** while parsing file included at C:/Users/dell/Desktop/eda/testbench.sv(6)
+# ** at COV.sv(2): near "(": syntax error, unexpected '(', expecting function or task or "SystemVerilog keyword 'pure'".
+# End time: 13:46:26 on Jun 10,2021, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/testbench.sv
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 13:50:02 on Jun 10,2021
+# vlog -reportprogress 300 -work work C:/Users/dell/Desktop/eda/testbench.sv 
+# ** Error: C:/Users/dell/Desktop/eda/testbench.sv(2): Cannot open `include file "C:/questasim64_10.7c/ovm-2.1.2/../verilog_src/ovm-2.1.2/src/uvm_macros.svh".
+# ** Error: ** while parsing file included at C:/Users/dell/Desktop/eda/testbench.sv(6)
+# ** at COV.sv(1): (vlog-2730) Undefined variable: 'apb_transaction'.
+# ** Error: ** while parsing file included at C:/Users/dell/Desktop/eda/testbench.sv(6)
+# ** at COV.sv(2): (vlog-2163) Macro `uvm_component_utils is undefined.
+# ** Error: (vlog-13069) ** while parsing file included at C:/Users/dell/Desktop/eda/testbench.sv(6)
+# ** at COV.sv(2): near "(": syntax error, unexpected '(', expecting function or task or "SystemVerilog keyword 'pure'".
+# End time: 13:50:02 on Jun 10,2021, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
