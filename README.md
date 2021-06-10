@@ -1,1 +1,1 @@
-The Compelete APB AMBA 3 verification platform has been explained alongwith code and simulation results
+SVA : System verilog assertion based UVM verification of AMBA 3 APB protocol
